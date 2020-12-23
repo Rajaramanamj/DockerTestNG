@@ -32,14 +32,3 @@ services:
       - MODULE=search-module.xml
     volumes:
       - ./output/search-result:/usr/share/udemy/test-output
-  book-flight-module:
-    image: 65486509/selenium-docker
-    depends_on:
-      - chrome
-      - firefox
-    environment:
-      - HUB_HOST=hub
-      - BROWSER=chrome
-      - MODULE=book-flight-module.xml
-    volumes:
-      - ./output/bookflight-result:/usr/share/udemy/test-output
