@@ -22,7 +22,7 @@ services:
     environment:
       - HUB_HOST=hub
   search-module:
-    image: praveendocker/selenium-docker
+    image: 65486509/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -33,7 +33,7 @@ services:
     volumes:
       - ./output/search-result:/usr/share/udemy/test-output
   book-flight-module:
-    image: praveendocker/selenium-docker
+    image: 65486509/selenium-docker
     depends_on:
       - chrome
       - firefox
