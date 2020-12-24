@@ -22,7 +22,7 @@ services:
     environment:
       - HUB_HOST=hub
   search-module:
-    image: 65486509/selenium-docker
+    image: praveendocker/selenium-docker
     depends_on:
       - chrome
       - firefox
